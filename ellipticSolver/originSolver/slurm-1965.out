@@ -1,0 +1,12 @@
+Loading Intel-oneAPI-2022.1
+  Loading requirement: tbb/2021.5.0 compiler-rt/2022.0.1 oclfpga/2022.0.1
+    compiler/2022.0.1
+Loading petsc/3.14.0
+  Loading requirement: szip/2.1.1 hdf5/1.12.0
+
+Loading pnetcdf/1.12.2
+  Loading requirement: netcdf/4.7.4
+rm -rf *.o *.mod test.exe
+mpiifort  -O3 -r8 -free -mcmodel=large -heap-arrays 10 -shared-intel -g -traceback  -I/opt/libs-intel-oneapi/pnetcdf-1.12.2/include -I/opt/libs-intel-oneapi/netcdf-4.7.4/include -I/opt/libs-intel-oneapi/petsc-3.14.0/include -c src/petsc_vvm_solver.F
+mpiifort  -O3 -r8 -free -mcmodel=large -heap-arrays 10 -shared-intel -g -traceback  -I/opt/libs-intel-oneapi/pnetcdf-1.12.2/include -I/opt/libs-intel-oneapi/netcdf-4.7.4/include -I/opt/libs-intel-oneapi/petsc-3.14.0/include -c src/test.F
+mpiifort  -O3 -r8 -free -mcmodel=large -heap-arrays 10 -shared-intel -g -traceback  -I/opt/libs-intel-oneapi/pnetcdf-1.12.2/include -I/opt/libs-intel-oneapi/netcdf-4.7.4/include -I/opt/libs-intel-oneapi/petsc-3.14.0/include test.o petsc_vvm_solver.o -o test.exe -L/opt/libs-intel-oneapi/pnetcdf-1.12.2/lib -lpnetcdf -L/opt/libs-intel-oneapi/netcdf-4.7.4/lib -lnetcdff -lnetcdf -L/opt/libs-intel-oneapi/petsc-3.14.0/lib -lpetsc -qmkl

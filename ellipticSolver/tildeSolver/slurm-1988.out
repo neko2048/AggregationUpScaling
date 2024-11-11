@@ -1,0 +1,1421 @@
+Loading Intel-oneAPI-2022.1
+  Loading requirement: tbb/2021.5.0 compiler-rt/2022.0.1 oclfpga/2022.0.1
+    compiler/2022.0.1
+Loading petsc/3.14.0
+  Loading requirement: szip/2.1.1 hdf5/1.12.0
+
+Loading pnetcdf/1.12.2
+  Loading requirement: netcdf/4.7.4
+rm -rf *.o *.mod test.exe
+mpiifort  -O3 -r8 -free -mcmodel=large -heap-arrays 10 -shared-intel -g -traceback  -I/opt/libs-intel-oneapi/pnetcdf-1.12.2/include -I/opt/libs-intel-oneapi/netcdf-4.7.4/include -I/opt/libs-intel-oneapi/petsc-3.14.0/include -c src/petsc_vvm_solver.F
+mpiifort  -O3 -r8 -free -mcmodel=large -heap-arrays 10 -shared-intel -g -traceback  -I/opt/libs-intel-oneapi/pnetcdf-1.12.2/include -I/opt/libs-intel-oneapi/netcdf-4.7.4/include -I/opt/libs-intel-oneapi/petsc-3.14.0/include -c src/test.F
+mpiifort  -O3 -r8 -free -mcmodel=large -heap-arrays 10 -shared-intel -g -traceback  -I/opt/libs-intel-oneapi/pnetcdf-1.12.2/include -I/opt/libs-intel-oneapi/netcdf-4.7.4/include -I/opt/libs-intel-oneapi/petsc-3.14.0/include test.o petsc_vvm_solver.o -o test.exe -L/opt/libs-intel-oneapi/pnetcdf-1.12.2/lib -lpnetcdf -L/opt/libs-intel-oneapi/netcdf-4.7.4/lib -lnetcdff -lnetcdf -L/opt/libs-intel-oneapi/petsc-3.14.0/lib -lpetsc -qmkl
+ Start Read fort.98
+ fort.98 Read Successfully
+-------------------- 000200 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000200.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8645E-10,  Iterations =    37
+End solving | Cost Time:     0.2 sec
+  6.410225115814974E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000200.nc                                                                                                                                                                  
+-------------------- 000201 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000201.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6328E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  6.649917222613456E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000201.nc                                                                                                                                                                  
+-------------------- 000202 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000202.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3920E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  5.935370335046583E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000202.nc                                                                                                                                                                  
+-------------------- 000203 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000203.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4851E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  5.935370335046583E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000203.nc                                                                                                                                                                  
+-------------------- 000204 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000204.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7796E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  5.935370335046583E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000204.nc                                                                                                                                                                  
+-------------------- 000205 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000205.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4590E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  7.103455299365955E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000205.nc                                                                                                                                                                  
+-------------------- 000206 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000206.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4132E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  5.935370335046583E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000206.nc                                                                                                                                                                  
+-------------------- 000207 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000207.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6395E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  4.974407174426442E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000207.nc                                                                                                                                                                  
+-------------------- 000208 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000208.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4407E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  4.974407174426442E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000208.nc                                                                                                                                                                  
+-------------------- 000209 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000209.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6677E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  4.974407174426442E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000209.nc                                                                                                                                                                  
+-------------------- 000210 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000210.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6223E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  4.974407174426442E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000210.nc                                                                                                                                                                  
+-------------------- 000211 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000211.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5158E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  3.721044907251573E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000211.nc                                                                                                                                                                  
+-------------------- 000212 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000212.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5716E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  1.885945704256495E-007
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000212.nc                                                                                                                                                                  
+-------------------- 000213 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000213.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7194E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  9.146585887535068E-009
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000213.nc                                                                                                                                                                  
+-------------------- 000214 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000214.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8717E-10,  Iterations =    16
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000214.nc                                                                                                                                                                  
+-------------------- 000215 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000215.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6323E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000215.nc                                                                                                                                                                  
+-------------------- 000216 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000216.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5547E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000216.nc                                                                                                                                                                  
+-------------------- 000217 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000217.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8284E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000217.nc                                                                                                                                                                  
+-------------------- 000218 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000218.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4695E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000218.nc                                                                                                                                                                  
+-------------------- 000219 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000219.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5726E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000219.nc                                                                                                                                                                  
+-------------------- 000220 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000220.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6536E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000220.nc                                                                                                                                                                  
+-------------------- 000221 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000221.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5314E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000221.nc                                                                                                                                                                  
+-------------------- 000222 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000222.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7842E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000222.nc                                                                                                                                                                  
+-------------------- 000223 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000223.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6989E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000223.nc                                                                                                                                                                  
+-------------------- 000224 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000224.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4982E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000224.nc                                                                                                                                                                  
+-------------------- 000225 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000225.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5440E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000225.nc                                                                                                                                                                  
+-------------------- 000226 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000226.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5417E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000226.nc                                                                                                                                                                  
+-------------------- 000227 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000227.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5956E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000227.nc                                                                                                                                                                  
+-------------------- 000228 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000228.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4374E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000228.nc                                                                                                                                                                  
+-------------------- 000229 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000229.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5593E-10,  Iterations =    16
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000229.nc                                                                                                                                                                  
+-------------------- 000230 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000230.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8223E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000230.nc                                                                                                                                                                  
+-------------------- 000231 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000231.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7805E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000231.nc                                                                                                                                                                  
+-------------------- 000232 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000232.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7801E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000232.nc                                                                                                                                                                  
+-------------------- 000233 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000233.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5304E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  5.053294479232836E-008
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000233.nc                                                                                                                                                                  
+-------------------- 000234 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000234.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7961E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000234.nc                                                                                                                                                                  
+-------------------- 000235 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000235.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8944E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000235.nc                                                                                                                                                                  
+-------------------- 000236 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000236.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9929E-10,  Iterations =     9
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000236.nc                                                                                                                                                                  
+-------------------- 000237 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000237.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7767E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000237.nc                                                                                                                                                                  
+-------------------- 000238 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000238.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3823E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000238.nc                                                                                                                                                                  
+-------------------- 000239 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000239.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5234E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000239.nc                                                                                                                                                                  
+-------------------- 000240 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000240.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4331E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000240.nc                                                                                                                                                                  
+-------------------- 000241 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000241.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9125E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000241.nc                                                                                                                                                                  
+-------------------- 000242 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000242.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4702E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000242.nc                                                                                                                                                                  
+-------------------- 000243 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000243.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5454E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000243.nc                                                                                                                                                                  
+-------------------- 000244 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000244.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3860E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000244.nc                                                                                                                                                                  
+-------------------- 000245 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000245.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3423E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000245.nc                                                                                                                                                                  
+-------------------- 000246 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000246.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6915E-10,  Iterations =     9
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000246.nc                                                                                                                                                                  
+-------------------- 000247 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000247.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6078E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000247.nc                                                                                                                                                                  
+-------------------- 000248 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000248.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9886E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000248.nc                                                                                                                                                                  
+-------------------- 000249 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000249.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9998E-10,  Iterations =     9
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000249.nc                                                                                                                                                                  
+-------------------- 000250 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000250.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3819E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000250.nc                                                                                                                                                                  
+-------------------- 000251 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000251.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5315E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000251.nc                                                                                                                                                                  
+-------------------- 000252 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000252.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9344E-10,  Iterations =     9
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000252.nc                                                                                                                                                                  
+-------------------- 000253 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000253.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4595E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000253.nc                                                                                                                                                                  
+-------------------- 000254 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000254.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4490E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000254.nc                                                                                                                                                                  
+-------------------- 000255 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000255.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4735E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000255.nc                                                                                                                                                                  
+-------------------- 000256 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000256.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9598E-10,  Iterations =     9
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000256.nc                                                                                                                                                                  
+-------------------- 000257 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000257.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6268E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000257.nc                                                                                                                                                                  
+-------------------- 000258 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000258.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6968E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000258.nc                                                                                                                                                                  
+-------------------- 000259 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000259.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5137E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000259.nc                                                                                                                                                                  
+-------------------- 000260 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000260.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4511E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000260.nc                                                                                                                                                                  
+-------------------- 000261 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000261.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9770E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000261.nc                                                                                                                                                                  
+-------------------- 000262 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000262.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8788E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000262.nc                                                                                                                                                                  
+-------------------- 000263 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000263.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8834E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000263.nc                                                                                                                                                                  
+-------------------- 000264 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000264.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9404E-10,  Iterations =     9
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000264.nc                                                                                                                                                                  
+-------------------- 000265 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000265.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5214E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000265.nc                                                                                                                                                                  
+-------------------- 000266 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000266.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6412E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000266.nc                                                                                                                                                                  
+-------------------- 000267 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000267.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3822E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000267.nc                                                                                                                                                                  
+-------------------- 000268 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000268.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8889E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000268.nc                                                                                                                                                                  
+-------------------- 000269 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000269.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7087E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000269.nc                                                                                                                                                                  
+-------------------- 000270 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000270.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6867E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000270.nc                                                                                                                                                                  
+-------------------- 000271 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000271.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7452E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000271.nc                                                                                                                                                                  
+-------------------- 000272 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000272.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6008E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000272.nc                                                                                                                                                                  
+-------------------- 000273 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000273.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3778E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000273.nc                                                                                                                                                                  
+-------------------- 000274 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000274.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3762E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000274.nc                                                                                                                                                                  
+-------------------- 000275 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000275.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4498E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000275.nc                                                                                                                                                                  
+-------------------- 000276 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000276.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4061E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000276.nc                                                                                                                                                                  
+-------------------- 000277 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000277.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6995E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000277.nc                                                                                                                                                                  
+-------------------- 000278 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000278.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8562E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000278.nc                                                                                                                                                                  
+-------------------- 000279 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000279.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9052E-10,  Iterations =     9
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000279.nc                                                                                                                                                                  
+-------------------- 000280 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000280.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4241E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000280.nc                                                                                                                                                                  
+-------------------- 000281 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000281.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5651E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000281.nc                                                                                                                                                                  
+-------------------- 000282 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000282.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4879E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000282.nc                                                                                                                                                                  
+-------------------- 000283 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000283.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5123E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000283.nc                                                                                                                                                                  
+-------------------- 000284 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000284.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6657E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000284.nc                                                                                                                                                                  
+-------------------- 000285 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000285.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5094E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000285.nc                                                                                                                                                                  
+-------------------- 000286 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000286.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8961E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000286.nc                                                                                                                                                                  
+-------------------- 000287 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000287.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8106E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000287.nc                                                                                                                                                                  
+-------------------- 000288 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000288.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5980E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000288.nc                                                                                                                                                                  
+-------------------- 000289 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000289.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8556E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000289.nc                                                                                                                                                                  
+-------------------- 000290 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000290.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4773E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000290.nc                                                                                                                                                                  
+-------------------- 000291 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000291.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5064E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000291.nc                                                                                                                                                                  
+-------------------- 000292 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000292.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3562E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000292.nc                                                                                                                                                                  
+-------------------- 000293 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000293.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6013E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000293.nc                                                                                                                                                                  
+-------------------- 000294 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000294.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9919E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000294.nc                                                                                                                                                                  
+-------------------- 000295 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000295.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4622E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000295.nc                                                                                                                                                                  
+-------------------- 000296 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000296.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6437E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000296.nc                                                                                                                                                                  
+-------------------- 000297 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000297.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6850E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000297.nc                                                                                                                                                                  
+-------------------- 000298 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000298.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4553E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000298.nc                                                                                                                                                                  
+-------------------- 000299 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000299.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5216E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000299.nc                                                                                                                                                                  
+-------------------- 000300 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000300.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6598E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000300.nc                                                                                                                                                                  
+-------------------- 000301 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000301.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4970E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000301.nc                                                                                                                                                                  
+-------------------- 000302 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000302.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6230E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000302.nc                                                                                                                                                                  
+-------------------- 000303 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000303.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7868E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000303.nc                                                                                                                                                                  
+-------------------- 000304 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000304.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5228E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000304.nc                                                                                                                                                                  
+-------------------- 000305 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000305.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7012E-10,  Iterations =    16
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000305.nc                                                                                                                                                                  
+-------------------- 000306 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000306.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6843E-10,  Iterations =    16
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000306.nc                                                                                                                                                                  
+-------------------- 000307 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000307.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7026E-10,  Iterations =    17
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000307.nc                                                                                                                                                                  
+-------------------- 000308 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000308.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9624E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000308.nc                                                                                                                                                                  
+-------------------- 000309 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000309.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7435E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000309.nc                                                                                                                                                                  
+-------------------- 000310 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000310.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4368E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000310.nc                                                                                                                                                                  
+-------------------- 000311 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000311.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4867E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000311.nc                                                                                                                                                                  
+-------------------- 000312 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000312.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9298E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000312.nc                                                                                                                                                                  
+-------------------- 000313 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000313.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9320E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000313.nc                                                                                                                                                                  
+-------------------- 000314 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000314.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8185E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000314.nc                                                                                                                                                                  
+-------------------- 000315 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000315.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9117E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000315.nc                                                                                                                                                                  
+-------------------- 000316 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000316.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7307E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000316.nc                                                                                                                                                                  
+-------------------- 000317 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000317.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8548E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000317.nc                                                                                                                                                                  
+-------------------- 000318 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000318.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8950E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000318.nc                                                                                                                                                                  
+-------------------- 000319 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000319.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7745E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000319.nc                                                                                                                                                                  
+-------------------- 000320 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000320.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8833E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000320.nc                                                                                                                                                                  
+-------------------- 000321 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000321.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4455E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000321.nc                                                                                                                                                                  
+-------------------- 000322 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000322.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4408E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000322.nc                                                                                                                                                                  
+-------------------- 000323 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000323.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5607E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000323.nc                                                                                                                                                                  
+-------------------- 000324 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000324.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3847E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000324.nc                                                                                                                                                                  
+-------------------- 000325 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000325.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4830E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000325.nc                                                                                                                                                                  
+-------------------- 000326 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000326.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5007E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000326.nc                                                                                                                                                                  
+-------------------- 000327 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000327.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4571E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000327.nc                                                                                                                                                                  
+-------------------- 000328 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000328.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6777E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000328.nc                                                                                                                                                                  
+-------------------- 000329 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000329.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6559E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000329.nc                                                                                                                                                                  
+-------------------- 000330 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000330.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5392E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000330.nc                                                                                                                                                                  
+-------------------- 000331 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000331.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8131E-10,  Iterations =    10
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000331.nc                                                                                                                                                                  
+-------------------- 000332 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000332.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8464E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000332.nc                                                                                                                                                                  
+-------------------- 000333 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000333.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9230E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000333.nc                                                                                                                                                                  
+-------------------- 000334 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000334.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7023E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000334.nc                                                                                                                                                                  
+-------------------- 000335 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000335.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6008E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000335.nc                                                                                                                                                                  
+-------------------- 000336 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000336.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3355E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000336.nc                                                                                                                                                                  
+-------------------- 000337 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000337.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5930E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000337.nc                                                                                                                                                                  
+-------------------- 000338 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000338.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6927E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000338.nc                                                                                                                                                                  
+-------------------- 000339 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000339.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5912E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000339.nc                                                                                                                                                                  
+-------------------- 000340 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000340.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5204E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000340.nc                                                                                                                                                                  
+-------------------- 000341 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000341.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8041E-10,  Iterations =    17
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000341.nc                                                                                                                                                                  
+-------------------- 000342 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000342.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7523E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000342.nc                                                                                                                                                                  
+-------------------- 000343 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000343.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5702E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000343.nc                                                                                                                                                                  
+-------------------- 000344 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000344.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8564E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000344.nc                                                                                                                                                                  
+-------------------- 000345 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000345.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6334E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000345.nc                                                                                                                                                                  
+-------------------- 000346 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000346.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8351E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000346.nc                                                                                                                                                                  
+-------------------- 000347 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000347.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6220E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000347.nc                                                                                                                                                                  
+-------------------- 000348 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000348.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6357E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000348.nc                                                                                                                                                                  
+-------------------- 000349 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000349.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6727E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000349.nc                                                                                                                                                                  
+-------------------- 000350 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000350.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7417E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000350.nc                                                                                                                                                                  
+-------------------- 000351 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000351.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7144E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000351.nc                                                                                                                                                                  
+-------------------- 000352 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000352.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.3976E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000352.nc                                                                                                                                                                  
+-------------------- 000353 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000353.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4055E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000353.nc                                                                                                                                                                  
+-------------------- 000354 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000354.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7006E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000354.nc                                                                                                                                                                  
+-------------------- 000355 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000355.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7946E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000355.nc                                                                                                                                                                  
+-------------------- 000356 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000356.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7094E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000356.nc                                                                                                                                                                  
+-------------------- 000357 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000357.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9129E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000357.nc                                                                                                                                                                  
+-------------------- 000358 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000358.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8355E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000358.nc                                                                                                                                                                  
+-------------------- 000359 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000359.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9690E-10,  Iterations =    18
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000359.nc                                                                                                                                                                  
+-------------------- 000360 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000360.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8565E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000360.nc                                                                                                                                                                  
+-------------------- 000361 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000361.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6856E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000361.nc                                                                                                                                                                  
+-------------------- 000362 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000362.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6799E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000362.nc                                                                                                                                                                  
+-------------------- 000363 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000363.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6273E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000363.nc                                                                                                                                                                  
+-------------------- 000364 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000364.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7977E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000364.nc                                                                                                                                                                  
+-------------------- 000365 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000365.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8962E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000365.nc                                                                                                                                                                  
+-------------------- 000366 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000366.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7050E-10,  Iterations =    16
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000366.nc                                                                                                                                                                  
+-------------------- 000367 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000367.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4917E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000367.nc                                                                                                                                                                  
+-------------------- 000368 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000368.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4682E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000368.nc                                                                                                                                                                  
+-------------------- 000369 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000369.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5201E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000369.nc                                                                                                                                                                  
+-------------------- 000370 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000370.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5904E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000370.nc                                                                                                                                                                  
+-------------------- 000371 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000371.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8453E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000371.nc                                                                                                                                                                  
+-------------------- 000372 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000372.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5441E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000372.nc                                                                                                                                                                  
+-------------------- 000373 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000373.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8293E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000373.nc                                                                                                                                                                  
+-------------------- 000374 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000374.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6452E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000374.nc                                                                                                                                                                  
+-------------------- 000375 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000375.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8529E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000375.nc                                                                                                                                                                  
+-------------------- 000376 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000376.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7183E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000376.nc                                                                                                                                                                  
+-------------------- 000377 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000377.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6108E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000377.nc                                                                                                                                                                  
+-------------------- 000378 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000378.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6473E-10,  Iterations =    11
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000378.nc                                                                                                                                                                  
+-------------------- 000379 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000379.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5292E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000379.nc                                                                                                                                                                  
+-------------------- 000380 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000380.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4645E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000380.nc                                                                                                                                                                  
+-------------------- 000381 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000381.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5267E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000381.nc                                                                                                                                                                  
+-------------------- 000382 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000382.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9993E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000382.nc                                                                                                                                                                  
+-------------------- 000383 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000383.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6730E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000383.nc                                                                                                                                                                  
+-------------------- 000384 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000384.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9749E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000384.nc                                                                                                                                                                  
+-------------------- 000385 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000385.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7646E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000385.nc                                                                                                                                                                  
+-------------------- 000386 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000386.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7074E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000386.nc                                                                                                                                                                  
+-------------------- 000387 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000387.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6748E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000387.nc                                                                                                                                                                  
+-------------------- 000388 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000388.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8396E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000388.nc                                                                                                                                                                  
+-------------------- 000389 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000389.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.8316E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000389.nc                                                                                                                                                                  
+-------------------- 000390 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000390.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9898E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000390.nc                                                                                                                                                                  
+-------------------- 000391 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000391.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.6388E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000391.nc                                                                                                                                                                  
+-------------------- 000392 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000392.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5780E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000392.nc                                                                                                                                                                  
+-------------------- 000393 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000393.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9212E-10,  Iterations =    14
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000393.nc                                                                                                                                                                  
+-------------------- 000394 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000394.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5583E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000394.nc                                                                                                                                                                  
+-------------------- 000395 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000395.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9290E-10,  Iterations =    12
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000395.nc                                                                                                                                                                  
+-------------------- 000396 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000396.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5349E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000396.nc                                                                                                                                                                  
+-------------------- 000397 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000397.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.4651E-10,  Iterations =    20
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000397.nc                                                                                                                                                                  
+-------------------- 000398 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000398.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7973E-10,  Iterations =    20
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000398.nc                                                                                                                                                                  
+-------------------- 000399 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000399.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.7202E-10,  Iterations =    15
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000399.nc                                                                                                                                                                  
+-------------------- 000400 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeQvLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-000400.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.9255E-10,  Iterations =    13
+End solving | Cost Time:     0.1 sec
+  0.000000000000000E+000
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeQvVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-000400.nc                                                                                                                                                                  

@@ -1,0 +1,39 @@
+ Start Read fort.98
+ fort.98 Read Successfully
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/perturbLaplace/HW22_P3_1p5K_2p0m/gaussian-1.0/buoyancy-001005.nc                                                                                                                                                             
+ Start to solve
+Norm of error =  0.9004E-08,  Iterations =     7
+End solving | Cost Time:     0.1 sec
+  6.538630615120603E-009  3.409749763138203E-004
+OUTPUT: /data/atmenu10246/scaleTransit/dat/perturbVertAcce/HW22_P3_1p5K_2p0m/gaussian-1.0/a-001005.nc                                                                                                                                                                   
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/perturbLaplace/HW22_P3_1p5K_2p0m/gaussian-2.0/buoyancy-001005.nc                                                                                                                                                             
+ Start to solve
+Norm of error =  0.9598E-08,  Iterations =     6
+End solving | Cost Time:     0.0 sec
+  6.770238610061291E-009  4.195699335086560E-004
+OUTPUT: /data/atmenu10246/scaleTransit/dat/perturbVertAcce/HW22_P3_1p5K_2p0m/gaussian-2.0/a-001005.nc                                                                                                                                                                   
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/perturbLaplace/HW22_P3_1p5K_2p0m/gaussian-4.0/buoyancy-001005.nc                                                                                                                                                             
+ Start to solve
+Norm of error =  0.9705E-08,  Iterations =     6
+End solving | Cost Time:     0.0 sec
+  6.823940373880338E-009  4.631652732505865E-004
+OUTPUT: /data/atmenu10246/scaleTransit/dat/perturbVertAcce/HW22_P3_1p5K_2p0m/gaussian-4.0/a-001005.nc                                                                                                                                                                   
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/perturbLaplace/HW22_P3_1p5K_2p0m/gaussian-8.0/buoyancy-001005.nc                                                                                                                                                             
+ Start to solve
+Norm of error =  0.8987E-08,  Iterations =     4
+End solving | Cost Time:     0.0 sec
+  6.812157634656127E-009  4.838238652430499E-004
+OUTPUT: /data/atmenu10246/scaleTransit/dat/perturbVertAcce/HW22_P3_1p5K_2p0m/gaussian-8.0/a-001005.nc                                                                                                                                                                   
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/perturbLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-001005.nc                                                                                                                                                            
+ Start to solve
+Norm of error =  0.5068E-08,  Iterations =     4
+End solving | Cost Time:     0.0 sec
+  6.808869505253590E-009  4.738851867795394E-004
+OUTPUT: /data/atmenu10246/scaleTransit/dat/perturbVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-001005.nc                                                                                                                                                                  
+--------------- FINISHED --------------
+2023-12-27 03:16:26

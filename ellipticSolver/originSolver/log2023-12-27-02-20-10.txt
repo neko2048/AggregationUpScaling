@@ -1,0 +1,10 @@
+ Start Read fort.98
+ fort.98 Read Successfully
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/laplaceThv/HW22_P3_1p5K_2p0m/buoyancy-001005.nc                                                                                                                                                                              
+ Start to solve
+Norm of error =  0.6872E-08,  Iterations =     5
+End solving | Cost Time:     0.1 sec
+OUTPUT: /data/atmenu10246/scaleTransit/dat/vertAcceThv/HW22_P3_1p5K_2p0m/a-001005.nc                                                                                                                                                                                    
+--------------- FINISHED --------------
+2023-12-27 02:20:12

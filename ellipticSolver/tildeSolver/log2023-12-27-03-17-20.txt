@@ -1,0 +1,34 @@
+ Start Read fort.98
+ fort.98 Read Successfully
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeLaplace/HW22_P3_1p5K_2p0m/gaussian-1.0/buoyancy-001005.nc                                                                                                                                                               
+ Start to solve
+Norm of error =  0.5528E-08,  Iterations =     8
+End solving | Cost Time:     0.1 sec
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeVertAcce/HW22_P3_1p5K_2p0m/gaussian-1.0/a-001005.nc                                                                                                                                                                     
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeLaplace/HW22_P3_1p5K_2p0m/gaussian-2.0/buoyancy-001005.nc                                                                                                                                                               
+ Start to solve
+Norm of error =  0.9949E-08,  Iterations =     5
+End solving | Cost Time:     0.0 sec
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeVertAcce/HW22_P3_1p5K_2p0m/gaussian-2.0/a-001005.nc                                                                                                                                                                     
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeLaplace/HW22_P3_1p5K_2p0m/gaussian-4.0/buoyancy-001005.nc                                                                                                                                                               
+ Start to solve
+Norm of error =  0.9370E-08,  Iterations =     6
+End solving | Cost Time:     0.0 sec
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeVertAcce/HW22_P3_1p5K_2p0m/gaussian-4.0/a-001005.nc                                                                                                                                                                     
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeLaplace/HW22_P3_1p5K_2p0m/gaussian-8.0/buoyancy-001005.nc                                                                                                                                                               
+ Start to solve
+Norm of error =  0.8289E-08,  Iterations =     4
+End solving | Cost Time:     0.0 sec
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeVertAcce/HW22_P3_1p5K_2p0m/gaussian-8.0/a-001005.nc                                                                                                                                                                     
+-------------------- 001005 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/tildeLaplace/HW22_P3_1p5K_2p0m/gaussian-16.0/buoyancy-001005.nc                                                                                                                                                              
+ Start to solve
+Norm of error =  0.4892E-08,  Iterations =     4
+End solving | Cost Time:     0.0 sec
+OUTPUT: /data/atmenu10246/scaleTransit/dat/tildeVertAcce/HW22_P3_1p5K_2p0m/gaussian-16.0/a-001005.nc                                                                                                                                                                    
+--------------- FINISHED --------------
+2023-12-27 03:17:22

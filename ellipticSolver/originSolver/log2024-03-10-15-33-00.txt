@@ -1,0 +1,201 @@
+ Start Read fort.98
+ fort.98 Read Successfully
+-------------------- 000000 --------------------
+INPUT: /data/atmenu10246/scaleTransit/dat/thLaplace/HW22_P3_1p5K_2p0m/buoyancy-000000.nc                                                                                                                                                                               
+ Start to solve
+Norm of error =  0.0000E+00,  Iterations =     0
+End solving | Cost Time:     0.0 sec
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ create fail
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+ NetCDF: Not a valid ID                                                         
+  
+--------------- FINISHED --------------
+2024-03-10 15:33:01
